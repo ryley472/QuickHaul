@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
 
   const SHEETS_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbwPLEvdS9J2IvOUV3OjzR4c77qVIaeTgFU1BTfhwnQC4TnQInPz_flMYEL1EgIRPJTaEQ/exec";
+    "https://script.google.com/macros/s/AKfycbw39Lgg7kx4MWSh4qgzj6ER0cQ8dxcOUkA2pvbmxMAy_DrKWRApm844kS9ko9RQSwa68g/exec";
 
   function router() {
     const route = window.location.hash.replace("#", "") || "landing";
@@ -259,4 +259,5 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------------- Init ----------------
   window.addEventListener("hashchange", router);
   router();
+
 });
