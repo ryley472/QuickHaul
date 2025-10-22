@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
 
   const SHEETS_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbzFHy4K4P2cZr9pcPIaVWkaEiOlIbAl7sped2trZLDNcpPvjDhy_zblOLYyQLdFSzfD/exec";
+    "https://script.google.com/macros/s/AKfycbwPLEvdS9J2IvOUV3OjzR4c77qVIaeTgFU1BTfhwnQC4TnQInPz_flMYEL1EgIRPJTaEQ/exec";
 
   function router() {
     const route = window.location.hash.replace("#", "") || "landing";
@@ -64,12 +64,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium shadow-sm hover:bg-green-200 cursor-default">King of Prussia, PA</span>
                 <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium shadow-sm hover:bg-green-200 cursor-default">Doylestown, PA</span>
                 <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium shadow-sm hover:bg-green-200 cursor-default">Blue Bell, PA</span>
+                <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium shadow-sm hover:bg-green-200 cursor-default">Camden, NJ</span>
+                <span class="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium shadow-sm hover:bg-green-200 cursor-default">Wilmington, DE</span>
             </div>
             </div>
         </div>
 
         <footer class="text-gray-500 text-sm mt-8">
-            © ${new Date().getFullYear()} QuickHaul Leads — Fast, Easy Junk Removal
+            © ${new Date().getFullYear()} QuickHaul — Fast, Easy Junk Removal
         </footer>
         </div>
     `;
@@ -89,7 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <!-- Compact Header & Back -->
         <div class="flex justify-between items-center mb-4">
           <h2 class="text-xl font-semibold text-gray-800">QuickHaul — Junk Removal Quote</h2>
-          <a href="#landing" class="text-green-600 text-sm font-medium hover:underline">← Back</a>
+          <a href="#landing" class="text-green-600 text-sm font-medium hover:underline">← Home</a>
         </div>
 
         <!-- Two Column: Name + Phone -->
@@ -112,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <!-- Location -->
         <div class="mb-4">
-          <label class="block text-sm font-medium mb-1">Location</label>
+          <label class="block text-sm font-medium mb-1">Location of Pickup</label>
           <input type="text" name="Location" required class="w-full border rounded-lg px-3 py-2">
         </div>
 
@@ -184,7 +186,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("📤 Sending to Google Sheets (urlencoded):", entries);
     const payload = new URLSearchParams();
     Object.keys(entries).forEach((k) => payload.append(k, entries[k]));
-    alert("TEST" + payload);
     fetch(SHEETS_ENDPOINT, { method: "Post", body: payload })
       .then((res) => res.json())
       .then(() => {
@@ -210,12 +211,12 @@ document.addEventListener("DOMContentLoaded", () => {
             If you have any issues or questions about your junk removal request, we’re here to help.
           </p>
           <ul class="text-left text-gray-700 mb-6 list-disc list-inside">
-            <li>📞 Call us at <strong>(800) 555-HAUL</strong></li>
-            <li>✉️ Email: <a href="mailto:support@quickhaulleads.com" class="text-green-600 underline">support@quickhaulleads.com</a></li>
-            <li>🕐 Support Hours: Mon–Fri, 8am–6pm EST</li>
+            <li>📞 Call us at <strong>267-454-1304</strong></li>
+            <li>✉️ Email: <a href="mailto:support@quickhaulquote.com" class="text-green-600 underline">support@quickhaulleads.com</a></li>
+            <li>🕐 Support Hours: 7 Days a Week, 8am–8pm EST</li>
           </ul>
           <a href="#landing" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl hover:bg-green-700 transition">
-            Back to Landing Page
+            Back to Home
           </a>
         </div>
       </div>
