@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
 
   const SHEETS_ENDPOINT =
-    "https://script.google.com/macros/s/AKfycbw39Lgg7kx4MWSh4qgzj6ER0cQ8dxcOUkA2pvbmxMAy_DrKWRApm844kS9ko9RQSwa68g/exec";
+    "https://script.google.com/macros/s/AKfycbyU4cz1YaHTttLX8ZAiKcTU0iOqZ3FoM25VhlzlRdTMmGBIEAsRqvSpiUiopLV2LUWRNg/exec";
 
   function router() {
     const route = window.location.hash.replace("#", "") || "landing";
@@ -261,3 +261,4 @@ document.addEventListener("DOMContentLoaded", () => {
   router();
 
 });
+
