@@ -212,7 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </p>
           <ul class="text-left text-gray-700 mb-6 list-disc list-inside">
             <li>📞 Call us at <strong>267-454-1304</strong></li>
-            <li>✉️ Email: <a href="mailto:support@quickhaulquote.com" class="text-green-600 underline">support@quickhaulleads.com</a></li>
+            <li>✉️ Email: <a href="mailto:support@quickhaulquote.com" class="text-green-600 underline">support@quickhaulquote.com</a></li>
             <li>🕐 Support Hours: 7 Days a Week, 8am–8pm EST</li>
           </ul>
           <a href="#landing" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl hover:bg-green-700 transition">
